@@ -25,6 +25,10 @@ $(document).ready(function () {
         $(".slpage,.sign-up").hide();
     });
     
+     $(".logout-btn").click(function () {
+            $(".click-me").show()
+        $(".show-details , .detailss").hide();
+    });
 
     $(".steel").click(function () {
         $(".mainpage, .slpage , .limited-edition").hide();
@@ -58,7 +62,7 @@ $(document).ready(function () {
         savedName = $("#name").val();
         savedPhone = $("#phone").val();
         
-        $("#profile2").text(savedName)
+        $("#profile2").text(savedName )
          $("#email2").text(savedEmail);
          $("#phone-no").text(savedPhone);
          $("#password").text(savedPass);
